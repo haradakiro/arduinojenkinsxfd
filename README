@@ -1,0 +1,4 @@
+Arduino Source Code for Jenkins XFD
+
+This requires EthernetShield to communicate with Jenkins.
+
