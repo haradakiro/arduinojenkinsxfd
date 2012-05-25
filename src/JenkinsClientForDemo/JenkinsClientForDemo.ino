@@ -52,7 +52,7 @@ void loop()
     if (client.connect(serverName, 8080)) {
       Serial.println("connected: "+projects[i]);
       // Make a HTTP request:
-      client.println("GET /jenkins/job/"+projects[i]+"/lastCompletedBuild/api/json?tree=result");
+      client.println("GET /job/"+projects[i]+"/lastCompletedBuild/api/json?tree=result HTTP/1.1");
       client.println();
     } 
     else {
